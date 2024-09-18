@@ -2,7 +2,7 @@
 var tarefa_foco;
 async function tarefa_post(texto,conc){
     await fetch(
-        "http://127.0.0.1:8000/api/tarefa/",{
+        "https://pyutilidades.onrender.com/api/tarefa/",{
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -20,7 +20,7 @@ async function tarefa_post(texto,conc){
 
 async function tarefa_put(texto,conc,pk){
     await fetch(
-        "http://127.0.0.1:8000/api/tarefa/"+pk,{
+        "https://pyutilidades.onrender.com/api/tarefa/"+pk,{
             method: 'PUT',
             mode: 'cors',
             headers: {
@@ -38,7 +38,7 @@ async function tarefa_put(texto,conc,pk){
 
 async function tarefa_del(pk){
     await fetch(
-        "http://127.0.0.1:8000/api/tarefa/"+pk,{
+        "https://pyutilidades.onrender.com/api/tarefa/"+pk,{
             method: 'DELETE',
             mode: 'cors',
             headers: {
@@ -54,7 +54,7 @@ async function tarefa_del(pk){
 async function tarefa_get() {
     var recebe;
     var v = await fetch(
-    "http://127.0.0.1:8000/api/tarefa/",{
+    "https://pyutilidades.onrender.com/api/tarefa/",{
         method: 'GET',
         mode: 'cors',
         headers: {
@@ -253,5 +253,5 @@ let t = new Tarefa()
 
 function appendtarefa(){
     main.replaceChildren(t.tarefa)
-    get()
+    tarefa_get()
 }

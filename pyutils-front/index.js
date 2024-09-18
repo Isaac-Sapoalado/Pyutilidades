@@ -1,7 +1,13 @@
 
 const main = document.getElementById("main")
+const head = document.getElementById("head")
 
-
+function alterar_header(){
+    if (sessionStorage.length > 0){
+        let d = head.lastChild
+        d.innerHTML = `Ola, ${sessionStorage.getItem('user')}`
+    }
+}
 
 
 class Index {

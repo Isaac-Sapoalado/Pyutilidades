@@ -1,7 +1,7 @@
 
 async function cadastro(){
     r = await fetch(
-        "https://pyutilidades.vercel.app/auth/cadastro/",{
+        "https://pyutilidades.onrender.com/auth/cadastro/",{
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -13,13 +13,12 @@ async function cadastro(){
                 'password':document.getElementById("senha").value
             })
         }).then(response => response.json()).then(dado => {return dado})
-    
-        
+        login()
 }
 
 async function login(){
     r = await fetch(
-        "https://pyutilidades.vercel.app/auth/login/",{
+        "https://pyutilidades.onrender.com/auth/login/",{
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -33,7 +32,7 @@ async function login(){
 
     sessionStorage.setItem('user',r.user)
     sessionStorage.setItem('token',('Token ' + r.access_token))
-
+    
 }
 
 class Cadastro{

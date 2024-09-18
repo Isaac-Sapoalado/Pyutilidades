@@ -1,9 +1,28 @@
 
 
-var palavra = 'palavra'
+var palavra = ''
 var outpalavra = ''
 var dicas = []
 var tentativas = 5
+
+async function pegar_palavra(){
+    response = await fetch(
+        "https://pyutilidades.onrender.com/api/palavra/",{
+            method: 'GET',
+            mode: 'cors',
+            headers: {
+                'Content-Type':'application/json'
+            }
+        })
+        .then(response => response.json()).then(d => {return d})
+        .catch(error => console.log(error))
+    
+        palavra = response.palavra
+        dicas = response.dicas
+
+    comecar()
+        
+}
 
 function comecar(){
     gerar_linhas()
@@ -160,5 +179,5 @@ var f = new Forca()
 
 function appendforca(){
     main.replaceChildren(f.forca)
-    comecar()
+    pegar_palavra()
 }
