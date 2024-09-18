@@ -34,6 +34,7 @@ async function login(){
     sessionStorage.setItem('pk',r.user.pk)
     sessionStorage.setItem('token',('Token ' + r.access_token))
     alterar_header()
+    appendIndex()
     
 }
 
