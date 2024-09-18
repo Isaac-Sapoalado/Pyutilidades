@@ -1,4 +1,4 @@
-# Pyutlilidades
+# Pyutilidades
 
 ---------SOBRE-----------
 Pyutilidades é o nome do projeto,online(no momento),de final de curso.
