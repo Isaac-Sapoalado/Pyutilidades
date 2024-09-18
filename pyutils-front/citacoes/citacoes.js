@@ -27,7 +27,7 @@ class Citacoes{
 
     async get(){
         var dado;
-        fet = await fetch("https://pyutilidades.onrender.com/api/cita/", {
+        await fetch("https://pyutilidades.onrender.com/api/cita/", {
             mode: 'cors',
             method: "GET",
             headers: {
@@ -46,8 +46,8 @@ class Citacoes{
     }
     
     adicionar(lista){
-        textcard = document.getElementById('cita_texto')
-        autor = document.getElementById('autor')
+        let textcard = document.getElementById('cita_texto')
+        let autor = document.getElementById('autor')
         textcard.innerText = lista.citacao
         autor.innerText = "autor:" + lista.autor
     }

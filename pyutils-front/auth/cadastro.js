@@ -32,6 +32,7 @@ async function login(){
 
     sessionStorage.setItem('user',r.user)
     sessionStorage.setItem('token',('Token ' + r.access_token))
+    alterar_header()
     
 }
 
