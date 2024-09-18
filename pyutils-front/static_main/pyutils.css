@@ -1,0 +1,87 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #141515;
+	button:hover{
+		cursor: pointer;
+	}
+}
+
+#head{
+	height: 100px;
+	display: flex;
+	padding-left: 10px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1a1b1b;
+	h2{
+		background-color: #141515;
+		align-content: center;
+		text-align: center;
+		border-radius: 15px;
+		width: 100px;
+		height: 50px;
+	}
+	h2:hover{
+		cursor: pointer;
+	}
+}
+#cont_principal{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 0px;
+}
+#main{
+	width: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+#aside{
+	padding-top: 50px;
+	width: 0px;
+	max-height: 500px;
+	align-items: center;
+	overflow-x: hidden;
+    overflow-y:unset;
+	scrollbar-width: none;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.indbtnp{
+	border-radius: 20px;
+	border-width: 0px;
+	align-items: center;
+	height: 30px;
+	width: 100px;
+}
+.inditem{
+	border-bottom: 2px solid black;
+	margin-bottom: 5px;
+	display: flex;
+
+	img{
+		background-color: white;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+	img:hover,p:hover{
+		cursor: pointer;
+	}
+	p:hover{
+		color: blue;
+		text-decoration:underline;
+	}
+
+	p{
+		margin: 0px;
+		margin-left: 10px;
+	}
+}
+.indconjunto{
+	width: 400px;
+}

@@ -1,0 +1,45 @@
+.Velhadiv_maior{
+    margin-top: 50px;
+    width: 402px;
+    height: 402px;
+}
+.Velhalinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 134px;
+}
+.Velhadiv_vezresult{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 402px;
+    height: 80px;
+}
+
+.Velhadivmeio,.Velhaitem,.Velhadivmeiov,.Velhadivmeioh{
+    height: 134px;
+    width: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+}
+
+.Velhadivmeioh{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+}
+.Velhadivmeiov{
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+}
+.Velhadivmeio{
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+}

@@ -1,0 +1,26 @@
+
+
+.datasig_divmaior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label{
+        font-size: larger;
+        border-bottom: 2px solid black;
+        margin-bottom: 5px;
+    }
+    input[type=date]{
+        border-radius: 5px;
+
+    }
+    h2{
+        border-bottom: 2px solid black;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    h4{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-transform: capitalize;
+    }
+}

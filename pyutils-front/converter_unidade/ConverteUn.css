@@ -1,0 +1,23 @@
+
+
+.convertundivmaior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .convertundivmenor{
+        display: flex;
+        justify-content: space-between;
+        width: 394px;
+        div{
+            select{
+                width: 187px;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                margin: 0px;
+            }
+        }
+    }
+}

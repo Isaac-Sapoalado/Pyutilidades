@@ -1,0 +1,13 @@
+converter para maiuscula -> Já tem no javascript
+remover linhas duplicadas -> só com html
+lista em ordem alfabetica -> já tem no javascript
+localizar e substituir -> modificar achar_rep() e unir com html
+contar caracteres,linhas,e palavras -> só com html
+sorteio -> só com html
+ordenar aleatoriamente
+gerador de senhas
+transformar texto em binario e destransformar
+transformar em morse e destransformar
+calcular idade(dias,meses,anos,minutos,horas)
+conversao de base numerica(binario,hexadecimal,octal,decimal)
+conversao para numeros romanos

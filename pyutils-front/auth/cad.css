@@ -1,0 +1,49 @@
+
+#cadmain{
+    background-color: rgb(25, 27, 27);
+    border-radius: 10px;
+}
+
+.cadsegment_div{
+    display: flex;
+	width: 220px;
+    border-top: 0px transparent;
+    justify-content: center;
+	margin-left: 40px;
+}
+
+.cadsegment_button{
+    width: 150px;
+    height: 20px;
+    border: unset;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+#cadform{
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	height: 350px;
+	padding: 0px;
+	align-items: center;
+	justify-content: center;
+	
+	input{
+		background-color: transparent;
+		border: 0px;
+		border-bottom: 2px solid white;
+		color: white;
+	}
+	button{
+		border-radius: 20px;
+		border-width: 0px;
+		align-items: center;
+		height: 30px;
+		width: 100px;
+	}
+
+}
+#cadhid{
+    display: none;
+}

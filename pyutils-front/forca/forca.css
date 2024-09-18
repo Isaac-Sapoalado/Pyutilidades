@@ -1,0 +1,63 @@
+.div_chute{
+    margin-top: 30px;
+    width: 600px;
+    display: flex;
+    justify-content: end;
+    button{
+        margin-left: 15px;
+    }
+}
+.div_maior{
+    background-color: white;
+
+    margin-top: 0px;
+    width: 600px;
+    height: 400px;
+}
+.top{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.tentativa{
+    font-size:x-large;
+    height: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.tabled{
+    height: 340px;
+    display: block;
+    align-content: center;
+    align-items: center;
+}
+table{
+    display: block;
+    align-items: center;
+}
+tr{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.div_menor{
+    
+    margin-left: 9px;
+    margin-right: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 40px;
+    height: 40px;
+    font-size: 55px;
+    
+}
+.text_chute{
+    width: 375px;
+    margin-right: 75px;
+}

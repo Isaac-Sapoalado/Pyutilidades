@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span{
+      background-color: red;
+    }
+    #maior{
+      display: flex;
+    }
+    #texto1{
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+    }
+    #texto2{
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="comparar_call()">comparar </button>
+  <div id="maior">
+    <div id="texto1" contenteditable="true"></div>
+    <div id="texto2" contenteditable="true"></div>
+
+    <div id="resp1"></div>
+    <div id="resp2"></div>
+  </div>
+
+
+  <script src="comparar.js"></script>
+</body>
+</html>

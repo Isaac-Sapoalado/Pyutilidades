@@ -1,0 +1,27 @@
+#calc_label{
+    resize: none;
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 308px;
+    height: 50px;
+    font-size: 40px;
+    text-wrap: nowrap;
+    text-align: end;
+    align-content:end;
+    justify-content: center;
+}
+.grid_calculadora {
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+}
+.item_calculadora {
+    background-color: rgb(27, 27, 27);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 30px;
+    text-align: center;
+    width: 50px;
+}

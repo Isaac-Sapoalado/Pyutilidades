@@ -1,0 +1,31 @@
+
+
+.Numex_divmaior{
+    h1,h3{
+        margin: 0px;
+    }
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        margin-top: 50px;
+        margin-bottom: 20pxyy;
+        width: 300px;
+        text-align: center;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    textarea{
+        resize: none;
+        width: 350px;
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        overflow-y: hidden;
+    }
+}
