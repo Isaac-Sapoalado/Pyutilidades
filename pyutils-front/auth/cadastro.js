@@ -1,16 +1,16 @@
 
 async function cadastro(){
     r = await fetch(
-        "http://127.0.0.1:8000/auth/cadastro/",{
+        "https://pyutilidades.vercel.app/auth/cadastro/",{
             method: 'POST',
             mode: 'cors',
             headers: {
                 'Content-Type':'application/json'
             },
             body:JSON.stringify({
-                'username':'isaac',
-                'email':'sapoalado',
-                'password':'3'
+                'username':document.getElementById("nome").value,
+                'email':document.getElementById("email").value,
+                'password':document.getElementById("senha").value
             })
         }).then(response => response.json()).then(dado => {return dado})
     
@@ -19,16 +19,15 @@ async function cadastro(){
 
 async function login(){
     r = await fetch(
-        "http://127.0.0.1:8000/auth/login/",{
+        "https://pyutilidades.vercel.app/auth/login/",{
             method: 'POST',
             mode: 'cors',
             headers: {
                 'Content-Type':'application/json'
             },
             body:JSON.stringify({
-                'username':'isaac',
-                'email':'sapo070@gmail.com',
-                'password':'senha'
+                'username':document.getElementById("nome").value,
+                'password':document.getElementById("senha").value
             })
         }).then(response => response.json()).then(dado => {return dado})
 
