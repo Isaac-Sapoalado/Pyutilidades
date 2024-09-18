@@ -62,7 +62,7 @@ class Equacao2{
 
 equacao2_call(){
 
-    let result = equacao_2grau(
+    let result = this.equacao_2grau(
       Number(this.numa.value),
       Number(this.numb.value),
       Number(this.numc.value))
