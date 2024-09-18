@@ -1,11 +1,13 @@
 
 const main = document.getElementById("main")
 const head = document.getElementById("head")
-
+const BASE_URL = 'https://pyutilidades.onrender.com/'
+const BASET_URL = 'http://127.0.0.1:8000/'
 function alterar_header(){
     if (sessionStorage.length > 0){
-        let d = head.lastChild
-        d.innerHTML = `Ola, ${sessionStorage.getItem('user')}`
+        let d = head.children.item(1)
+        d.innerHTML = `Ola, ${sessionStorage.getItem('username')}`
+        console.log(d)
     }
 }
 
@@ -120,4 +122,5 @@ function appendIndex(){
     
 }
 appendIndex()
+alterar_header()
 

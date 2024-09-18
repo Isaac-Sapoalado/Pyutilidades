@@ -1,7 +1,7 @@
 
 async function cadastro(){
     r = await fetch(
-        "https://pyutilidades.onrender.com/auth/cadastro/",{
+        BASE_URL+"auth/cadastro/",{
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -18,7 +18,7 @@ async function cadastro(){
 
 async function login(){
     r = await fetch(
-        "https://pyutilidades.onrender.com/auth/login/",{
+        BASE_URL+"auth/login/",{
             method: 'POST',
             mode: 'cors',
             headers: {
@@ -30,7 +30,8 @@ async function login(){
             })
         }).then(response => response.json()).then(dado => {return dado})
 
-    sessionStorage.setItem('user',r.user)
+    sessionStorage.setItem('username',r.user.username)
+    sessionStorage.setItem('pk',r.user.pk)
     sessionStorage.setItem('token',('Token ' + r.access_token))
     alterar_header()
     

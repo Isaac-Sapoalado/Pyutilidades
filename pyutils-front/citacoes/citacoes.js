@@ -27,7 +27,7 @@ class Citacoes{
 
     async get(){
         var dado;
-        await fetch("https://pyutilidades.onrender.com/api/cita/", {
+        await fetch(BASE_URL+"api/cita/", {
             mode: 'cors',
             method: "GET",
             headers: {

@@ -2,11 +2,12 @@
 var tarefa_foco;
 async function tarefa_post(texto,conc){
     await fetch(
-        "https://pyutilidades.onrender.com/api/tarefa/",{
+        BASE_URL+"api/tarefa/",{
             method: 'POST',
             mode: 'cors',
             headers: {
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'Authorization': sessionStorage.getItem('token')
             },
             body: JSON.stringify({
                 'tarefa':texto,
@@ -20,11 +21,12 @@ async function tarefa_post(texto,conc){
 
 async function tarefa_put(texto,conc,pk){
     await fetch(
-        "https://pyutilidades.onrender.com/api/tarefa/"+pk,{
+        BASE_URL+"api/tarefa/"+pk,{
             method: 'PUT',
             mode: 'cors',
             headers: {
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'Authorization': sessionStorage.getItem('token')
             },
             body: JSON.stringify({
                 'tarefa':texto,
@@ -38,11 +40,12 @@ async function tarefa_put(texto,conc,pk){
 
 async function tarefa_del(pk){
     await fetch(
-        "https://pyutilidades.onrender.com/api/tarefa/"+pk,{
+        BASE_URL+"api/tarefa/"+pk,{
             method: 'DELETE',
             mode: 'cors',
             headers: {
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'Authorization': sessionStorage.getItem('token')
             }
         }
     
@@ -54,11 +57,12 @@ async function tarefa_del(pk){
 async function tarefa_get() {
     var recebe;
     var v = await fetch(
-    "https://pyutilidades.onrender.com/api/tarefa/",{
+    BASE_URL+"api/tarefa/"+sessionStorage.getItem("pk"),{
         method: 'GET',
         mode: 'cors',
         headers: {
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
+            'Authorization': sessionStorage.getItem('token')
         }
     }
 
@@ -113,7 +117,7 @@ function tarefa_gerar_linha(seq,chave,bol,novo=false){
     }
     //configurando icones
     {
-    img1.src = "tarefas/static/tarefa_editar.png"
+    img1.src = "tarefas/static/editar.png"
     img1.width,img1.height = 30
     img1.onclick = function (){
         tarefa_editar(div3.id)

@@ -7,7 +7,7 @@ var tentativas = 5
 
 async function pegar_palavra(){
     response = await fetch(
-        "https://pyutilidades.onrender.com/api/palavra/",{
+        BASE_URL+"api/palavra/",{
             method: 'GET',
             mode: 'cors',
             headers: {
