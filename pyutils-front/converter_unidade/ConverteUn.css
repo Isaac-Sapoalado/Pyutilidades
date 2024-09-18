@@ -4,15 +4,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    h1{
+        border-bottom: 2px solid black;
+    }
+    input{
+
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
+        }
+    select{
+        
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
+        border-radius: 5px;
+    }
     .convertundivmenor{
         display: flex;
         justify-content: space-between;
         width: 394px;
+        
         div{
             select{
                 width: 187px;
-                text-align: center;
             }
             p{
                 text-align: center;

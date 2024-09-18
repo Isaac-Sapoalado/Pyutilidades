@@ -13,6 +13,8 @@
 
     input{
         text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
     }
 
     .Cifrabutton{
@@ -34,6 +36,9 @@
         border-radius: 10px;
         align-content: center;
         text-align: center;
+        
+        background-color: #272727;
+        color: #b5b5b5;
     }
 
 }

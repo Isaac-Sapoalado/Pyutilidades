@@ -31,6 +31,7 @@ class Equacao2{
       this.x1.readOnly = true,this.x2.readOnly = true
       this.numa.type = 'number',this.numb.type = 'number',this.numc.type = 'number'
       btn.innerHTML = 'Calcular',btn.onclick = function(){t.equacao2_call()}
+      btn.className = 'indbtnp'
     }
 
     //assinando hierarquia

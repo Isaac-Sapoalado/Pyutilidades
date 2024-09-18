@@ -127,6 +127,7 @@ class CodBtexto{
             op3.value = 'octal',op3.innerText = 'octal'
             op4.value = 'hexadecimal',op4.innerText = 'hexadecimal'
             btn1.onclick = function(){t.converter(1)},btn1.innerText = 'codificar'
+            btn1.className = 'indbtnp',btn2.className = ' indbtnp'
             btn2.onclick = function(){t.converter(-1)},btn2.innerText = 'decodificar'
             l.innerText = 'Codificação',h1.innerText = 'Codificar Texto'
             h2.innerText = 'Coloque o texto:'

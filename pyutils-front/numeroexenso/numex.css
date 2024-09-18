@@ -4,15 +4,20 @@
     h1,h3{
         margin: 0px;
     }
+    h1{
+        border-bottom: 2px solid black;
+    }
     
     display: flex;
     flex-direction: column;
     align-items: center;
     input{
         margin-top: 50px;
-        margin-bottom: 20pxyy;
+        margin-bottom: 20px;
         width: 300px;
         text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
     }
     /* Chrome, Safari, Edge, Opera */
     input::-webkit-outer-spin-button,
@@ -27,5 +32,7 @@
         padding-top: 35px;
         padding-bottom: 35px;
         overflow-y: hidden;
+        background-color: #272727;
+        color: #b5b5b5;
     }
 }

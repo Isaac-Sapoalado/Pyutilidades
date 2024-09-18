@@ -23,7 +23,7 @@ class Repeterm{
             btn.onclick = function(){
                 t.achar_rep(t.txt.value,t.inp.value)
             }
-            btn.innerText = 'Achar'
+            btn.innerText = 'Achar',btn.className = 'indbtnp'
         }
 
         //assinando hierarquia
@@ -45,7 +45,7 @@ class Repeterm{
                     let sl = text.slice(ind,ind+matchgoal)
                     if (sl.toLowerCase() === ob.toLowerCase()){
                         let spa = document.createElement("span")
-                        spa.innerText = sl
+                        spa.innerText = sl,spa.style.color = 'red'
                         this.result.appendChild(spa)
                         ref = ind+matchgoal
                         continue

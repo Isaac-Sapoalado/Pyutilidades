@@ -4,12 +4,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+    h1{
+        border-bottom: 2px solid black;
+    }
+
+    select{
+        
+        text-align: center;
+        background-color: #505050;
+        color: #b5b5b5;
+        border-radius: 5px;
+    }
     
     textarea{
         width: 200px;
-
+        margin-left: 10px;
         resize: none;
         text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
         align-content: center;
+    }
+    button{
+        margin-left: 10px;
     }
 }

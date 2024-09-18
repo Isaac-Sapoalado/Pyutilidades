@@ -18,8 +18,8 @@ class Citacoes{
         let p2 = document.createElement("p")
         let btn = document.createElement("button")
 
-        div.className = "card",btn.className = "buttoncard",btn.onclick = function(){t.get()},btn.innerText = "Buscar"
-        p1.id = 'cita_texto',p1.className = "textcard",p2.id = 'autor',p2.className = "autor"
+        div.className = "card",btn.onclick = function(){t.get()},btn.innerText = "Buscar"
+        p1.id = 'cita_texto',p1.className = "textcard",p2.id = 'autor',p2.className = "autor",btn.classList.add("indbtnp","buttoncard")
 
         div.replaceChildren(p1,p2)
         this.cita.replaceChildren(btn,div)

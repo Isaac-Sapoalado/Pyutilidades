@@ -11,6 +11,9 @@
     }
     input[type=date]{
         border-radius: 5px;
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
 
     }
     h2{

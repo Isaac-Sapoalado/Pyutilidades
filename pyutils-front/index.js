@@ -6,7 +6,7 @@ const BASET_URL = 'http://127.0.0.1:8000/'
 function alterar_header(){
     if (sessionStorage.length > 0){
         let d = head.children.item(1)
-        d.innerHTML = `Ola, ${sessionStorage.getItem('username')}`
+        d.innerHTML = `<b>Ola, ${sessionStorage.getItem('username')}</b>`
         console.log(d)
     }
 }
@@ -45,8 +45,8 @@ class Index {
                 [function(){appendforca()},'forca.png','Forca','Jogo da forca'],
             ]],
             ['Codificação',[
-                [function(){appendCifradv(1)},'cifra.png','cifra de cesar',''],
-                [function(){appendCifradv(2)},'cifra.png','cifra de vignerie',''],
+                [function(){appendCifradv(1)},'cesar.png','cifra de cesar',''],
+                [function(){appendCifradv(2)},'vig.png','cifra de vignerie',''],
                 [function(){appendconbase()},'base.png','Conversão de base',''],
                 [function(){appendcodbt()},'textobase.png','Codificar Texto','Transforme um texto em binario e mais']
             ]],

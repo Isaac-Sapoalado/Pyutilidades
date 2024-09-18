@@ -44,7 +44,7 @@ class Cifradv{
         //se cesar -> cifrar=cod_cesar(texto,pass,1) e decifrar = cod_cesar(texto,pass,-1)
         //se viger -> cifrar=viginerie(texto,chave,1) e decifrar = viginerie(texto,chave,-1)
         b1.onclick = tipos[type][2],b2.onclick = tipos[type][3]
-        b1.innerHTML = 'Cifrar',b2.innerHTML = 'Decifrar'
+        b1.innerHTML = 'Cifrar',b2.innerHTML = 'Decifrar',b1.className = 'indbtnp',b2.className='indbtnp'
 
     }
 

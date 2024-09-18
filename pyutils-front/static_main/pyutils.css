@@ -1,29 +1,55 @@
 body{
 	margin: 0px;
 	padding: 0px;
+	overflow-y: auto;
 	background-color: #141515;
 	button:hover{
 		cursor: pointer;
 	}
+	label{
+		color:#9c9c9c;
+	}
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 #head{
 	height: 100px;
 	display: flex;
-	padding-left: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #1a1b1b;
-	h2{
-		background-color: #141515;
-		align-content: center;
-		text-align: center;
-		border-radius: 15px;
-		width: 100px;
-		height: 50px;
+	background-color: #272727;
+	
+	h2,b{
+		color: #757575;
+
 	}
 	h2:hover{
 		cursor: pointer;
+	}
+	.headdiv{
+		display: flex;
+		align-items: center;
+		padding:0px;
+		div{
+			align-content: center;
+			text-align: center;
+			border-radius: 15px;
+			padding: 0px;
+			width: 200px;
+			height: 56px;
+			h2{
+				margin: 0px;
+			}
+			b{
+			margin: 0px;
+			font-size: 15px;
+			}
+		}
+
 	}
 }
 #cont_principal{
@@ -39,6 +65,12 @@ body{
 	align-items: center;
 	justify-content: space-around;
 	padding-top: 20px;
+	h1,h2,h4,b,span{
+		color: #757575;
+	}
+	h3{
+		color: #9c9c9c;
+	}
 }
 #aside{
 	padding-top: 50px;
@@ -58,6 +90,12 @@ body{
 	align-items: center;
 	height: 30px;
 	width: 100px;
+	background-color: #505050;
+	color:#b5b5b5;
+	font-weight: bolder;
+}
+.indbtnp:hover{
+    background-color: rgb(30, 30, 30);
 }
 .inditem{
 	border-bottom: 2px solid black;
@@ -73,11 +111,12 @@ body{
 		cursor: pointer;
 	}
 	p:hover{
-		color: blue;
+		color: #9c9c9c;
 		text-decoration:underline;
 	}
 
-	p{
+	p{	
+		color: #4e4e4e;
 		margin: 0px;
 		margin-left: 10px;
 	}

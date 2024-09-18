@@ -7,6 +7,14 @@
     align-items: center;
     h1{
         text-align: center;
+        border-bottom: 2px solid black;
+    }
+    input{
+
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
+
     }
     
 }

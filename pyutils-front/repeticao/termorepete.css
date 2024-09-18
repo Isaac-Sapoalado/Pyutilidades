@@ -4,14 +4,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    span{
-        color: red;
-    }
+    
     h1{
         margin: 0px;
+        border-bottom: 2px solid black;
     }
     input{
         text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
     }
     button{
         margin-top: 10px;
@@ -21,6 +22,9 @@
         height: 150px;
         margin-top: 15px;
         resize: none;
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
     }
     .repeteresultado{
         border: 1px solid gray;
@@ -30,5 +34,11 @@
         height: 150px;
         overflow-y: auto;
         font-family: monospace;
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
+        span{
+        color: red;
+        }
     } 
 }

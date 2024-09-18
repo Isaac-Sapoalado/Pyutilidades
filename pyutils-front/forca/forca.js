@@ -170,7 +170,7 @@ class Forca{
         inp.type = "text",inp.maxLength = 1,inp.className = "text_chute",inp.id = "chute"
         btn1.onclick = function(){dica()},btn1.id = "dicabtn",btn1.innerText = "Dica"
         btn2.onclick = function(){chutar()},btn2.id = "chutebtn",btn2.innerText = "Chutar"
-
+        btn1.className = 'indbtnp',btn2.className='indbtnp'
         this.div2.replaceChildren(inp,btn1,btn2)
     }
 }
