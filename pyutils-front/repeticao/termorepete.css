@@ -18,7 +18,7 @@
         margin-top: 10px;
     }
     .repetetexto{
-        width: 300px;
+        width: 450px;
         height: 150px;
         margin-top: 15px;
         resize: none;
@@ -30,7 +30,7 @@
         border: 1px solid gray;
         background-color: white;
         margin-top: 20px;
-        width: 304px;
+        width: 454px;
         height: 150px;
         overflow-y: auto;
         font-family: monospace;
@@ -40,5 +40,8 @@
         span{
         color: red;
         }
-    } 
+    }
+    .repetetexto::-webkit-scrollbar,.repeteresultado::-webkit-scrollbar{
+    display: none;
+}
 }
