@@ -48,7 +48,8 @@ class Index {
                 [function(){appendCifradv(1)},'cesar.png','cifra de cesar',''],
                 [function(){appendCifradv(2)},'vig.png','cifra de vignerie',''],
                 [function(){appendconbase()},'base.png','Conversão de base',''],
-                [function(){appendcodbt()},'textobase.png','Codificar Texto','Transforme um texto em binario e mais']
+                [function(){appendcodbt()},'textobase.png','Codificar Texto','Transforme um texto em binario e mais'],
+                [function(){appendRoma()},'romanos.png','Numeros romanos',''],
             ]],
             ['Manipulação de Textos',[
                 [function(){appendinvertexto()},'invert.png','Inverter Texto',''],

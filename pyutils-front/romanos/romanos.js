@@ -51,7 +51,7 @@ class RomanosEm{
 
     achar(x,t=1){
         if (t===1){
-            for (i in this.dict){
+            for (let i in this.dict){
                 if (this.dict[i] == x){
                     return Number(i)
                 }
@@ -59,7 +59,7 @@ class RomanosEm{
             return 0
         }
         if (tipo == -1){
-            for (i in this.dict){
+            for (let i in this.dict){
                 if (i == x){
                     return this.dict[i]
                 }
@@ -75,7 +75,7 @@ class RomanosEm{
         let casas = {}
         if (tipo === 1){
             let dec = 0
-            for (i of num){
+            for (let i of num){
                 array.push(this.achar(i.toUpperCase()))
             }
             let re = array.reduce((dec,i,ind)=>{
@@ -94,14 +94,23 @@ class RomanosEm{
         }
         if (tipo === -1){
             let resp = ''
-            for (let i=0;i<=2;i++){
-                if (i === 0){casas['centena'] = num[i] }
-                if (i === 1){casas['dezena'] = num[i]}
-                if (i === 2){casas['unidade'] = num[i]}
+            for (let i=0;i< num.length;i++){
+                if(num.length === 3){
+                    if (i === 0){casas['centena'] = num[i]}
+                    if (i === 1){casas['dezena'] = num[i]}
+                    if (i === 2){casas['unidade'] = num[i]} 
+                }
+                if(num.length === 2){
+                    if (i === 0){casas['dezena'] = num[i]}
+                    if (i === 1){casas['unidade'] = num[i]} 
+                }
+                if(num.length === 1){
+                    if (i === 0){casas['unidade'] = num[i]} 
+                }
+                
             }
             for (let item in casas){
                 let num = Number(casas[item])
-                console.log(item)
                 if (item === 'centena'){
                     if (num <= 3){
                         resp += this.dict[100].repeat(num)

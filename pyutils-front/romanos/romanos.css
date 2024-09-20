@@ -16,6 +16,9 @@
         width: 187px;
         height: 25px;
         font-size: large;
+        text-align: center;
+        background-color: #272727;
+        color: #b5b5b5;
     }
     button{
         border-radius: 10px;
